@@ -3,7 +3,7 @@ import { Equals } from "@styled-icons/typicons/Equals";
 const EqualButton = () => {
     return ( 
         <button type="button">
-            <Equals />
+            <Equals size="36"/>
         </button>
     );
 }

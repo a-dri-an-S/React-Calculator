@@ -1,9 +1,9 @@
-import { DeleteOutline } from "@styled-icons/typicons/DeleteOutline";
+import { Delete } from "@styled-icons/typicons/Delete";
 
 const ClearButton = () => {
     return ( 
         <button type="button" >
-            <DeleteOutline />
+            <Delete size="60"/>
         </button>
     );
 }

@@ -3,7 +3,7 @@ import { AddSubtractCircle } from "@styled-icons/fluentui-system-regular/AddSubt
 const NegativeButton = () => {
     return ( 
         <button type="button">
-            <AddSubtractCircle />
+            <AddSubtractCircle size="48"/>
         </button>
     );
 }
