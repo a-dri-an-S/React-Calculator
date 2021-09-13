@@ -7,7 +7,11 @@ const ClearButton = () => {
     const { handleClearValue } = useContext(NumberContext);
 
     return ( 
-        <button type="button" onClick={() => handleClearValue()}>
+        <button 
+            type="button" 
+            className="operation-button"  
+            onClick={() => handleClearValue()}
+        >
             <Delete size="60"/>
         </button>
     );

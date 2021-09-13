@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CalculatorStyles = styled.div`
-    background-color: #4abdac;
+    background-color: #1d1d2c;
     max-width: 100%;
     height: 100vh;
     display: grid;
@@ -13,22 +13,29 @@ export const CalculatorStyles = styled.div`
         width: 100%;
         height: 80px;
         border-radius: 20px;
-        border: 3px solid white;
-        font-size: 2rem;
-        color: white;
-        font-family: 'Orbitron', serif;
-        background: #e17055;
+        border: 3px solid #f7f4e9;
+        font-size: 2.5rem;
+        color: #1d1d2c;
+        font-family: 'Sarpanch', sans-serif;
         &:focus {
         outline: none;
         }
     }
+    button:hover {
+        background-color: #f7f4e9;
+    } 
+    button:active {
+        background-color: #e40c2b;
+        color: #f7f4e9;
+        border-color: #f7f4e9;
+    }
     .display {
-        font-family: 'Orbitron', serif;
+        font-family: 'Sarpanch', sans-serif;
         font-weight: 700;
         grid-area: display;
         h1 {
         font-size: 4rem;
-        color: white;
+        color: #e40c2b;
         text-align: center;
         margin: 40px 0;
         }
@@ -47,32 +54,45 @@ export const CalculatorStyles = styled.div`
     .zero-button {
         grid-column: 1/3;
     }
+    .function-button {
+        background-color: #438945;
+    }
+    .number-button {
+        background-color: #3cbcc3
+    }
+    .operation-button {
+        background-color: #eba63f
+    }
+    
+    
 `;
+
 
 export const DisplayStyles = styled.div`
     display: grid;
     grid-template-rows: 90px 50px;
     grid-template-columns: 1fr;
-    border: 4px solid white;
+    border: 4px solid #f7f4e9;
     margin: 10px;
     width: 700px;
     align-items: center;
     border-radius: 20px;
-    background: #e17055;
+    background: #eba63f;
     h2,
     p {
         text-align: center;
-        color: white;
+        color: #1d1d2c;
     }
     h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
         margin: 0;
         text-align: right;
         padding: 0px;
-        border-bottom: 4px solid white;
-        padding: 15px 20px;
+        border-bottom: 4px solid #f7f4e9;
+        padding: 5px 20px;
     }
     p {
         margin: 5px 0;
+        font-size: 1.5rem
     }
 `;

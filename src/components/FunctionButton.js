@@ -6,7 +6,11 @@ const FunctionButton = ({ btnVal }) => {
     const { handleSetCalcFunction } = useContext(NumberContext)
 
     return ( 
-        <button type="button" onClick={() => handleSetCalcFunction(btnVal)}>
+        <button 
+            type="button" 
+            className="function-button" 
+            onClick={() => handleSetCalcFunction(btnVal)}
+        >
             { btnVal }
         </button>
     );

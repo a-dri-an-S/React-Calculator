@@ -7,7 +7,11 @@ const EqualButton = () => {
     const { handleMathOperations } = useContext(NumberContext);
 
     return ( 
-        <button type="button" onClick={() => handleMathOperations()}>
+        <button 
+            type="button" 
+            className="operation-button"    
+            onClick={() => handleMathOperations()}
+        >
             <Equals size="36"/>
         </button>
     );

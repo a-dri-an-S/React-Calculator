@@ -8,7 +8,7 @@ const Display = () => {
     return ( 
         <DisplayStyles>
             <h2>{ !number.length && !storedNumber ? '0' : number || storedNumber }</h2>
-            <p>{ !storedNumber ? "Enter yo' digitz" : `${storedNumber} ${functionType} ${number}` }</p>
+            <p>{ !storedNumber ? "ENTER YO' DIGITZ" : `${storedNumber} ${functionType} ${number}` }</p>
         </DisplayStyles>
     );
 }

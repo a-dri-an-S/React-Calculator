@@ -6,7 +6,11 @@ const NumberButton = ({ btnVal }) => {
     const { handleSetDisplayValue } = useContext(NumberContext);
 
     return ( 
-        <button type="button" onClick={() => handleSetDisplayValue(btnVal)}>
+        <button 
+            type="button" 
+            className="number-button"    
+            onClick={() => handleSetDisplayValue(btnVal)}
+        >
             { btnVal }
         </button>
     );

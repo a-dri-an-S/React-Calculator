@@ -7,7 +7,11 @@ const BackButton = () => {
     const { handleBackButton } = useContext(NumberContext);
 
     return (
-        <button type="button" onClick={() => handleBackButton()}>
+        <button 
+            type="button" 
+            className="operation-button"  
+            onClick={() => handleBackButton()}
+        >
             <Backspace size="48"/>
         </button>
     );

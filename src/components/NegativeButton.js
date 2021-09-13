@@ -7,7 +7,11 @@ const NegativeButton = () => {
     const { handleToggleNegative } = useContext(NumberContext)
 
     return ( 
-        <button type="button" onClick={() => handleToggleNegative()}>
+        <button 
+            type="button" 
+            className="operation-button"
+            onClick={() => handleToggleNegative()}
+        >
             <AddSubtractCircle size="48"/>
         </button>
     );

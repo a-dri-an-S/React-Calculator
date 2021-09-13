@@ -11,7 +11,7 @@ const Calculator = () => {
     return ( 
         <CalculatorStyles>
             <div className="display">
-                <h1>Lemme get yo' digitz</h1>
+                <h1>LEMME GET YO' DIGITZ</h1>
                 <Display />
             </div>
             <div className="number-pad">
