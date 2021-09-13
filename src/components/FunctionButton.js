@@ -1,7 +1,14 @@
+import { useContext } from 'react';
+import { NumberContext } from './NumberProvider'
+
 const FunctionButton = ({ btnVal }) => {
     
+    const { handleSetCalcFunction } = useContext(NumberContext)
+
     return ( 
-        <button type="button">{ btnVal }</button>
+        <button type="button" onClick={() => handleSetCalcFunction(btnVal)}>
+            { btnVal }
+        </button>
     );
 }
 

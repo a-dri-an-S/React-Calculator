@@ -31,7 +31,7 @@ const Calculator = () => {
                 <NumberButton btnVal={ 2 } />
                 <NumberButton btnVal={ 3 } />
                 <FunctionButton btnVal="+" />
-                <div>
+                <div className="zero-button">
                     <NumberButton btnVal={ 0 } />
                 </div>
                 <NumberButton btnVal="." />

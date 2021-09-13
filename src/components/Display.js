@@ -3,12 +3,12 @@ import { NumberContext } from './NumberProvider';
 import { DisplayStyles } from './styles/Styles';
 
 const Display = () => {
-    const { number } = useContext(NumberContext)
+    const { number, storedNumber, functionType } = useContext(NumberContext)
 
     return ( 
         <DisplayStyles>
-            <h2>{ number }</h2>
-            <p>Enter A Number</p>
+            <h2>{ !number.length && !storedNumber ? '0' : number || storedNumber }</h2>
+            <p>{ !storedNumber ? "Enter yo' digitz" : `${storedNumber} ${functionType} ${number}` }</p>
         </DisplayStyles>
     );
 }
