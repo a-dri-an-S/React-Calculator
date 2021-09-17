@@ -21,9 +21,7 @@ export const CalculatorStyles = styled.div`
         outline: none;
         }
     }
-    button:hover {
-        background-color: #f7f4e9;
-    } 
+
     button:active {
         background-color: #e40c2b;
         color: #f7f4e9;
